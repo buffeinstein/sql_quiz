@@ -53,16 +53,16 @@ $ sqlite3 quiz.db
 
 To create a postgres database, run the commands
 ```
-$ docker-compose up --build -d
+$ docker compose up --build -d
 ```
 The `Dockerfile` runs the `create_tables.sql` files inside of postgres to populate the database with example values.
 
 You can run all practice problems at once with the incantation
 ```
-$ docker-compose < quiz_notes_?.sql exec -T pg psql -a
+$ docker compose < quiz_notes_?.sql exec -T pg psql -a
 ```
 
 You can enter an interactive SQL session with the command
 ```
-$ docker-compose exec pg psql
+$ docker compose exec pg psql
 ```
